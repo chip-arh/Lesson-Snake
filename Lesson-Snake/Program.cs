@@ -16,6 +16,9 @@ namespace Lesson_Snake
             Point p2 = new Point(2,5,'#');
             p2.Draw();
 
+            HorisontalLine line = new HorisontalLine(5,10,8,'+');
+            line.Draw();
+
             Console.ReadLine();
         }
 

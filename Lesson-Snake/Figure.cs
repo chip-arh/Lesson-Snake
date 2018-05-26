@@ -16,5 +16,6 @@ namespace Lesson_Snake
                 p.Draw();
             }
         }
+        
     }
 }

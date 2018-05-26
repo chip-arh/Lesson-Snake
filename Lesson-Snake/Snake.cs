@@ -45,5 +45,19 @@ namespace Lesson_Snake
             else if (key == ConsoleKey.DownArrow) direction = Direction.DOWND;
             else if (key == ConsoleKey.UpArrow) direction = Direction.UP;
         }
+
+        internal bool Eat(Point food)
+        {
+            Point head = GetNextPoint();
+            if (head.isHit(food))
+            {
+                //food.sym = head.sym;
+                //pList.Add(head);
+                Move();
+                return true;
+            }
+            else
+                return false;
+        }
     }
 }

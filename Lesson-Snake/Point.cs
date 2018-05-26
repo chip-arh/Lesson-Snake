@@ -36,11 +36,18 @@ namespace Lesson_Snake
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
+
+            Console.SetCursorPosition(0, 0);
+            Console.Write(x.ToString() + ":" + y.ToString());
         }
         public void Clear()
         {
             sym = ' ';
             Draw();
+        }
+        public bool isHit(Point p)
+        {
+            return p.x == this.x && p.y == this.y;
         }
     }
 }

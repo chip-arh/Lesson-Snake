@@ -10,14 +10,17 @@ namespace Lesson_Snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1,3,'*');
-            p1.Draw();
+            Console.SetWindowSize(80, 25);
+            Console.SetBufferSize(80, 25);
 
-            Point p2 = new Point(2,5,'#');
-            p2.Draw();
-
-            HorisontalLine line = new HorisontalLine(5,10,8,'+');
-            line.Draw();
+            HorisontalLine upline = new HorisontalLine(0,78,0,'+');
+            HorisontalLine downline = new HorisontalLine(0, 78, 24, '+');
+            VerticalLine leftline = new VerticalLine(0, 24, 0, '+');
+            VerticalLine rightline = new VerticalLine(0, 24, 78, '+');
+            upline.Draw();
+            downline.Draw();
+            leftline.Draw();
+            rightline.Draw();
 
             Console.ReadLine();
         }

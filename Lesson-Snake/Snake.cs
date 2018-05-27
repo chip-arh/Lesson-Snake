@@ -52,8 +52,9 @@ namespace Lesson_Snake
             if (head.isHit(food))
             {
                 //food.sym = head.sym;
-                //pList.Add(head);
-                Move();
+                pList.Add(head);
+                head.Draw();
+                
                 return true;
             }
             else
